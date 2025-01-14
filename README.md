@@ -16,7 +16,7 @@ MainFrame.Parent = ScreenGui
 MainFrame.Size = UDim2.new(0, 300, 0, 250)  -- Ajuste o tamanho para que caibam os botões
 MainFrame.Position = UDim2.new(0.5, -150, 0.5, -125)  -- Ajuste para centralizar melhor
 MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Cor preta
-MainFrame.BackgroundTransparency = 0.5  -- Definir a transparência do fundo
+MainFrame.BackgroundTransparency = 0.5  -- Transparência no fundo
 MainFrame.BorderSizePixel = 3
 MainFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)  -- Borda branca
 
@@ -25,7 +25,7 @@ TitleLabel.Parent = MainFrame
 TitleLabel.Size = UDim2.new(1, 0, 0.2, 0)  -- Ajuste o tamanho do título
 TitleLabel.Position = UDim2.new(0, 0, 0, 0)
 TitleLabel.Text = "Guibbs Rollback - Anime Adventures"
-TitleLabel.TextSize = 14  -- Reduzindo o tamanho da fonte
+TitleLabel.TextSize = 12  -- Fonte menor
 TitleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)  -- Cor branca
 TitleLabel.BackgroundTransparency = 1  -- Sem fundo
 TitleLabel.TextAlign = Enum.TextXAlignment.Center
@@ -63,7 +63,7 @@ RollbackButton.MouseButton1Click:Connect(function()
     RollbackButton.Text = "Rollback Ativado"
     print("Rollback ativado!")
 
--- Salva os valores atuais como "estado inicial"
+    -- Salva os valores atuais como "estado inicial"
     if game.Players.LocalPlayer:FindFirstChild("leaderstats") then
         for _, v in pairs(game.Players.LocalPlayer.leaderstats:GetChildren()) do
             if v:IsA("IntValue") or v:IsA("NumberValue") then
