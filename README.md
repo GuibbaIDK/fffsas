@@ -34,18 +34,24 @@ RollbackButton.Parent = MainFrame
 RollbackButton.Size = UDim2.new(0, 200, 0, 50)
 RollbackButton.Position = UDim2.new(0.5, -100, 0.3, 0)
 RollbackButton.Text = "Turn On Rollback"
+RollbackButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)  -- Cor do botão branca
+RollbackButton.TextColor3 = Color3.fromRGB(0, 0, 0)  -- Cor do texto preta
 
 -- Configurações do botão "Turn Off Rollback"
 StopButton.Parent = MainFrame
 StopButton.Size = UDim2.new(0, 200, 0, 50)
 StopButton.Position = UDim2.new(0.5, -100, 0.5, 0)
 StopButton.Text = "Turn Off Rollback"
+StopButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)  -- Cor do botão branca
+StopButton.TextColor3 = Color3.fromRGB(0, 0, 0)  -- Cor do texto preta
 
 -- Configurações do botão "Reentrar"
 RejoinButton.Parent = MainFrame
 RejoinButton.Size = UDim2.new(0, 200, 0, 50)
 RejoinButton.Position = UDim2.new(0.5, -100, 0.7, 0)
 RejoinButton.Text = "Reentrar no Jogo"
+RejoinButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)  -- Cor do botão branca
+RejoinButton.TextColor3 = Color3.fromRGB(0, 0, 0)  -- Cor do texto preta
 
 local rollbackActive = false
 local originalValues = {}
