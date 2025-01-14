@@ -16,6 +16,7 @@ MainFrame.Parent = ScreenGui
 MainFrame.Size = UDim2.new(0, 300, 0, 250)  -- Ajuste o tamanho para que caibam os botões
 MainFrame.Position = UDim2.new(0.5, -150, 0.5, -125)  -- Ajuste para centralizar melhor
 MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Cor preta
+MainFrame.BackgroundTransparency = 0.5  -- Definir a transparência do fundo
 MainFrame.BorderSizePixel = 3
 MainFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)  -- Borda branca
 
